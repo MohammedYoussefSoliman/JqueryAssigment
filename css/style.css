@@ -1,0 +1,165 @@
+body
+{
+	font-family: 'Anton', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	transition: all 1s;
+
+}
+
+header
+{
+	background-image: url("../img/cover.jpg");
+	background-size: cover;
+	min-height: 400px;
+	overflow: hidden;
+	position: relative;
+	
+}
+
+.RedOver
+{
+	background: rgba(214, 46, 51 , 0.6);
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding-left: 0;
+}
+
+.h1style
+{
+	margin-top: 300px;
+	color: #fff;
+}
+
+aside
+{
+	background-color: #414658;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	width: 250px;
+	display: block;
+}
+aside ul
+{
+	padding-top: 100px;
+}
+aside ul li
+{
+	margin-top: 20px;
+}
+
+aside ul li a
+{
+	text-decoration: none;
+	padding: 20px 8px 20px 32px;
+	transition: 0.4s;
+	font-size: 20px;
+	color: #fff;
+}
+
+aside ul li a:hover
+{
+	text-decoration: none;
+	color: rgba(214, 46, 51 , 0.4);
+}
+
+.RedOver h3
+{
+	font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 275px;
+}
+aside i
+{
+	font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    margin: 30;
+}
+
+#album
+{
+	width: 50%;
+	margin: 100px auto;
+}
+
+#album h3
+{
+	padding: 10px;
+	background-color: rgba(214, 46, 51 , 0.4);
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+    line-height: 1.1;
+    cursor: pointer;
+	
+}
+#album p
+{
+	background-color: #ccc;
+	padding: 15px;
+	text-align: justify;
+}
+
+.slided
+{
+	display: none;
+}
+
+.CounterBg
+{
+	background-image: url("../img/joinUs.jpg");
+	background-size: cover;
+	height: 300px;
+	overflow: hidden;
+}
+
+.counter h5
+{
+	border: 1px solid #fff;
+	padding: 50px;
+	margin: 10px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.btnstyle
+{
+	border-radius: 0 !important;
+	border: 1px solid #777777 !important;
+	width: 40px;
+	height: 40px;
+	font-size: 15px;
+	color: #777777;
+}
+
+.btnstyle:hover
+{
+	color: #fff !important;
+	background-color:  rgba(236, 50, 55, 1) !important;
+	border: 1px solid #fff  !important;
+}
+
+textarea {
+    height: 300px;
+    resize: vertical;
+ }
+
+.btnMs
+{
+	color: #fff !important;
+	background-color:  rgba(236, 50, 55, 1) !important;
+	border: 1px solid #fff  !important;
+	display: block;
+	border-radius: 0 !important;
+}
+
+#char
+{
+	font-size: 20px;
+    color: #D62E33;
+}
