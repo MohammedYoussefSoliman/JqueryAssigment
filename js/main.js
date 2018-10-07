@@ -1,14 +1,14 @@
 // Activating the links to pages' sections
 
 
-$("header a").click(function(){
+$("ul a").click(function(){
 	var Selected = $(this).attr("href");
 	var SectionTop = $(Selected).offset().top;
 
-	$("html").animate({scrollTop: SectionTop},2000); /*msh 3arf leh al transition msh sha3'al ask mentor*/
+	$("html,body").animate({scrollTop:SectionTop},600); /*msh 3arf leh al transition msh sha3'al ask mentor*/
 })
 
-// offset() this function gets the cords of the selected element this cord could be specified be the element position.
+// offset() this function gets the cords of the selected element this cord could be specified by the element position.
 
 // $(selector).animate({params},speed,callback);
 
@@ -21,20 +21,16 @@ $("header a").click(function(){
 
 $("#closer").click(function(){
 
-	var sidebar = $("aside").css("display","none");
-	var opener = $("#opener").css("margin-left","15px");
-	$("aside").animate({sidebar},2000);
-	$("#opener").animate({opener},2000);
+	$("aside").animate({left:-255},500);
+	$("#opener").animate({marginLeft:15},500);
 })
 
 // Opening
 
 $("#opener").click(function(){
 
-	var sidebar = $("aside").css("display","block");
-	var opener = $("#opener").css("margin-left","275px");
-	$("aside").animate({sidebar},2000);
-	$("#opener").animate({opener},2000);
+	$("aside").animate({left:0},500);
+	$("#opener").animate({marginLeft:270},500);
 })
 
 /* still msh 3arf leh al transition msh sha3'al ask mentor :( */
@@ -60,7 +56,7 @@ var s = Current.getMilliseconds()/1000;
 var m = Current.getMinutes();
 var h = Current.getHours();
 var d = Current.getDay();
-console.log(s+" "+m+" "+h+" "+d) /*da 2zay da*/
+/*console.log(s+" "+m+" "+h+" "+d) /*da 2zay da*/
 var currenTime = Current.getTime();
 
 
@@ -124,6 +120,13 @@ $(function(){
     
 });
 
+
+$(".lineParent").mouseover(function() {
+	$(this).find('.lineThrough').animate({right:420},1000);
+});
+$(".lineParent").mouseleave(function() {
+	$(this).find('.lineThrough').animate({right:0},1000);
+});
 
 /*
 var maxLen = 10;

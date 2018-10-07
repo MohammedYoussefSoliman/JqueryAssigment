@@ -163,3 +163,23 @@ textarea {
 	font-size: 20px;
     color: #D62E33;
 }
+
+.lineParent h1
+{
+	position: relative;
+	background-color: red;
+	overflow: hidden;
+	width: 420px;
+	height: 50px;
+}
+.lineThrough
+{
+	background-color: tan;
+	height: 10%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	z-index: 1;
+	overflow: hidden;
+	width: 0;
+}
